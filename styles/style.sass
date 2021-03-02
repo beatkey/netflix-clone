@@ -1,0 +1,106 @@
+@charset "UTF-8"
+
+@function unicode($str)
+   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+
+@mixin placeholder-color($color)
+   &::-webkit-input-placeholder
+      color: $color
+
+   &:-moz-placeholder
+      color: $color
+
+   &::-moz-placeholder
+      color: $color
+
+   &:-ms-input-placeholder
+      color: $color
+
+   &::placeholder
+      color: $color
+
+@mixin triangle
+   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
+
+@mixin box-shadow($var)
+   -webkit-box-shadow: $var
+   -moz-box-shadow: $var
+   box-shadow: $var
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%))
+   &::-webkit-scrollbar
+      width: $size
+      height: $size
+
+   &::-webkit-scrollbar-thumb
+      background: $foreground-color
+
+   &::-webkit-scrollbar-track
+      background: $background-color
+   &
+      scrollbar-face-color: $foreground-color
+      scrollbar-track-color: $background-color
+
+
+@keyframes leftToRight
+   49%
+      transform: translate(100%)
+   50%
+      opacity: 0
+      transform: translate(-100%)
+   51%
+      opacity: 1
+
+
+@import "beatkey.css"
+@import "font-awesome.min.css"
+@import "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+
+$color1: #309B9B
+$color2: #333333
+$color3: #F76A51
+
+*
+   box-sizing: border-box
+
+html
+   overflow-y: scroll
+
+body, html
+   font-family: 'Poppins', sans-serif
+   color: #fff
+   background-color: #151515
+
+body
+   max-width: 100%
+   overflow: hidden
+   padding: 0 5em
+
+main
+   max-width: 100%
+   overflow: hidden
+
+/********************************************************/
+
+.Title1
+   font-size: 1.5em
+   font-weight: 600
+
+header
+   padding: 20px 0
+
+   .Logo
+      width: 150px
+
+   nav
+      a
+         margin-right: 20px
+
+   i
+      font-size: 20px !important
+      font-weight: bold !important
+
+   .Avatar
+      width: 40px
+      cursor: pointer

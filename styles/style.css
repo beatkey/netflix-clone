@@ -1,0 +1,50 @@
+@import url(beatkey.css);
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap";
+@keyframes leftToRight {
+  49% {
+    transform: translate(100%); }
+  50% {
+    opacity: 0;
+    transform: translate(-100%); }
+  51% {
+    opacity: 1; } }
+* {
+  box-sizing: border-box; }
+
+html {
+  overflow-y: scroll; }
+
+body, html {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #151515; }
+
+body {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 5em; }
+
+main {
+  max-width: 100%;
+  overflow: hidden; }
+
+/******************************************************* */
+.Title1 {
+  font-size: 1.5em;
+  font-weight: 600; }
+
+header {
+  padding: 20px 0; }
+  header .Logo {
+    width: 150px; }
+  header nav a {
+    margin-right: 20px; }
+  header i {
+    font-size: 20px !important;
+    font-weight: bold !important; }
+  header .Avatar {
+    width: 40px;
+    cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
