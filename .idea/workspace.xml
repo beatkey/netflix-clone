@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb54fdaa-2f87-4d3b-b319-0336530aba6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/netflix-clone.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Main/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Main/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/articles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/beatkey.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/clear.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Main/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Main/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Main/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/hello.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +90,7 @@
       <workItem from="1614583461132" duration="2165000" />
       <workItem from="1614585647297" duration="12934000" />
       <workItem from="1614605937382" duration="1887000" />
-      <workItem from="1614666730598" duration="318000" />
+      <workItem from="1614666730598" duration="10355000" />
     </task>
     <servers />
   </component>

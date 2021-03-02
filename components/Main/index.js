@@ -1,6 +1,6 @@
 import Slider from './slider'
 
-const Index = () => {
+const Index = (props) => {
     return (
         <div className="container-fluid mt-4">
             <div className="row">

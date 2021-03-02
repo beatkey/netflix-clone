@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Header from '../components/Header';
 import Main from '../components/Main';
+import fetch from 'isomorphic-unfetch';
 
-export default function Home() {
+const Index = (props) => {
     return (
         <div>
             <Head>
@@ -11,8 +12,10 @@ export default function Home() {
             </Head>
             <Header/>
             <main>
-                <Main/>
+                <Main />
             </main>
         </div>
     )
 }
+
+export default Index;
