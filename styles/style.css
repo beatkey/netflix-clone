@@ -51,13 +51,55 @@ header {
   position: relative; }
   .Slider1:hover {
     z-index: 1; }
-  .Slider1 .slick-list {
-    overflow: unset; }
   .Slider1 .slick-slide {
     max-height: 150px; }
   .Slider1 .Item {
     padding: 5px;
     position: relative; }
+    .Slider1 .Item .ContentContainer {
+      position: relative; }
+      .Slider1 .Item .ContentContainer .Content {
+        transition: all 0.2s;
+        position: relative; }
+        .Slider1 .Item .ContentContainer .Content .Video {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          opacity: 0; }
+        .Slider1 .Item .ContentContainer .Content .Image {
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          height: 100%; }
+          .Slider1 .Item .ContentContainer .Content .Image img {
+            width: 100%;
+            height: 100%; }
+        .Slider1 .Item .ContentContainer .Content .Info {
+          display: none;
+          background-color: #191919;
+          padding: 15px 10px; }
+          .Slider1 .Item .ContentContainer .Content .Info .Icons {
+            display: flex;
+            align-items: center; }
+            .Slider1 .Item .ContentContainer .Content .Info .Icons .Icon {
+              background-color: #232323;
+              color: #fff;
+              font-size: 20px;
+              border-radius: 50%;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 10px;
+              border: 1px solid #b0b0b0;
+              cursor: pointer;
+              transition: all 0.2s; }
+              .Slider1 .Item .ContentContainer .Content .Info .Icons .Icon:hover {
+                background-color: #fff;
+                color: #000; }
     .Slider1 .Item:hover {
       z-index: 2; }
       .Slider1 .Item:hover .Video {
@@ -68,47 +110,5 @@ header {
         transform: translate(-15%, -15%); }
         .Slider1 .Item:hover .Content .Info {
           display: block; }
-    .Slider1 .Item .Content {
-      transition: all 0.2s;
-      position: relative; }
-      .Slider1 .Item .Content .Video {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        opacity: 0; }
-      .Slider1 .Item .Content .Image {
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        height: 100%; }
-        .Slider1 .Item .Content .Image img {
-          width: 100%;
-          height: 100%; }
-      .Slider1 .Item .Content .Info {
-        display: none;
-        background-color: #191919;
-        padding: 15px 10px; }
-        .Slider1 .Item .Content .Info .Icons {
-          display: flex;
-          align-items: center; }
-          .Slider1 .Item .Content .Info .Icons .Icon {
-            background-color: #232323;
-            color: #fff;
-            font-size: 20px;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-            border: 1px solid #b0b0b0;
-            cursor: pointer;
-            transition: all 0.2s; }
-            .Slider1 .Item .Content .Info .Icons .Icon:hover {
-              background-color: #fff;
-              color: #000; }
 
 /*# sourceMappingURL=style.css.map */
