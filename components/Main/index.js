@@ -3,27 +3,13 @@ import React, {useState, useEffect} from "react";
 import fetch from "isomorphic-unfetch";
 import Slider from './slider'
 
-const Index = () => {
+const Main = (props) => {
     const [sliderDataPopular, setSliderDataPopular] = useState(null);
     const [sliderDataTopRated, setSliderDataTopRated] = useState(null);
     const [sliderDataNowPlaying, setsliderDataNowPlaying] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
-            let res = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=36c96c73055653c1821b00447d2b2722&language=en-US");
-            let data = await res.json();
-            setSliderDataPopular(data)
-
-            res = await fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=36c96c73055653c1821b00447d2b2722&language=en-US");
-            data = await res.json();
-            setSliderDataTopRated(data)
-
-            res = await fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=36c96c73055653c1821b00447d2b2722&language=en-US");
-            data = await res.json();
-            setsliderDataNowPlaying(data)
-        }
-
-        fetchData()
+        console.log(props.sliderData)
     }, [])
 
     return (
@@ -38,7 +24,7 @@ const Index = () => {
             <div className="row mb-5">
                 <div className="col">
                     <div className="Slider1">
-                        <Slider sliderData={sliderDataPopular}/>
+                        <Slider sliderData={props.sliderData.sliderDataPopular}/>
                     </div>
                 </div>
             </div>
@@ -52,7 +38,7 @@ const Index = () => {
             <div className="row mb-5">
                 <div className="col">
                     <div className="Slider1">
-                        <Slider sliderData={sliderDataTopRated}/>
+                        <Slider sliderData={props.sliderData.sliderDataTopRated}/>
                     </div>
                 </div>
             </div>
@@ -66,7 +52,7 @@ const Index = () => {
             <div className="row">
                 <div className="col">
                     <div className="Slider1">
-                        <Slider sliderData={sliderDataNowPlaying}/>
+                        <Slider sliderData={props.sliderData.sliderDataNowPlaying}/>
                     </div>
                 </div>
             </div>
@@ -74,4 +60,4 @@ const Index = () => {
     )
 }
 
-export default Index;
+export default Main;

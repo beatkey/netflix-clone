@@ -17,10 +17,31 @@ const Index = (props) => {
             </Head>
             <Header/>
             <main>
-                <Main/>
+                <Main sliderData={props.sliderData}/>
             </main>
         </div>
     )
+}
+
+export async function getStaticProps() {
+    let res = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=36c96c73055653c1821b00447d2b2722&language=en-US");
+    let data = await res.json();
+
+    res = await fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=36c96c73055653c1821b00447d2b2722&language=en-US");
+    let data2 = await res.json();
+
+    res = await fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=36c96c73055653c1821b00447d2b2722&language=en-US");
+    let data3 = await res.json();
+
+    return {
+        props: {
+            sliderData: {
+                sliderDataPopular: data,
+                sliderDataTopRated: data2,
+                sliderDataNowPlaying: data3
+            }
+        }
+    }
 }
 
 export default Index;
