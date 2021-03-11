@@ -38,7 +38,7 @@ export async function getStaticProps() {
             sliderData: {
                 sliderDataPopular: data,
                 sliderDataTopRated: data2,
-                sliderDataNowPlaying: data3
+                sliderDataNowPlaying: data3,
             }
         }
     }
