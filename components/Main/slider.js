@@ -19,16 +19,19 @@ const Index = (props) => {
                             <div className="Image">
                                 <img src={"https://image.tmdb.org/t/p/w500/" + value.backdrop_path} alt=""/>
                                 <div className="Video">
-                                    <video onMouseOver={event => event.target.play()}
+                                    <video onMouseOver={event => {
+                                        event.target.play();
+                                        event.target.muted = false;
+                                    }}
                                            onMouseOut={event => event.target.pause()}
-                                           src="heisenberg.mp4"/>
+                                           src="heisenberg.mp4" muted/>
                                 </div>
                             </div>
                             <div className="Info">
                                 <div className="Icons mb-2">
-                                    <div className="Icon">
+                                    <a href="/form" className="Icon">
                                         <i className="fa fa-play"></i>
-                                    </div>
+                                    </a>
                                     <div className="Icon">
                                         <i className="fa fa-check"></i>
                                     </div>

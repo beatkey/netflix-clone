@@ -18,7 +18,7 @@ function Index() {
                             <Link href="/articles">
                                 <a>TV Shows</a>
                             </Link>
-                            <Link href="/">
+                            <Link href="/form">
                                 <a>Movies</a>
                             </Link>
                             <Link href="/">

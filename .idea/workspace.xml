@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb54fdaa-2f87-4d3b-b319-0336530aba6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Main/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Main/slider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -96,6 +97,16 @@
       <workItem from="1615279073401" duration="1793000" />
       <workItem from="1615280906018" duration="3000" />
       <workItem from="1615464976752" duration="3763000" />
+      <workItem from="1617216425877" duration="161000" />
+      <workItem from="1617216593502" duration="9000" />
+      <workItem from="1617216608294" duration="146000" />
+      <workItem from="1617216760492" duration="1168000" />
+      <workItem from="1617478003077" duration="1536000" />
+      <workItem from="1617538278333" duration="2441000" />
+      <workItem from="1618682478510" duration="1452000" />
+      <workItem from="1619177949350" duration="2263000" />
+      <workItem from="1619270753053" duration="122000" />
+      <workItem from="1619270923102" duration="1932000" />
     </task>
     <servers />
   </component>
