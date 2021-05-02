@@ -1,56 +1,56 @@
 @charset "UTF-8"
 
 @function unicode($str)
-   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+  @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
 
 @mixin placeholder-color($color)
-   &::-webkit-input-placeholder
-      color: $color
+  &::-webkit-input-placeholder
+    color: $color
 
-   &:-moz-placeholder
-      color: $color
+  &:-moz-placeholder
+    color: $color
 
-   &::-moz-placeholder
-      color: $color
+  &::-moz-placeholder
+    color: $color
 
-   &:-ms-input-placeholder
-      color: $color
+  &:-ms-input-placeholder
+    color: $color
 
-   &::placeholder
-      color: $color
+  &::placeholder
+    color: $color
 
 @mixin triangle
-   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
-   clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
 
 @mixin box-shadow($var)
-   -webkit-box-shadow: $var
-   -moz-box-shadow: $var
-   box-shadow: $var
+  -webkit-box-shadow: $var
+  -moz-box-shadow: $var
+  box-shadow: $var
 
 @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%))
-   &::-webkit-scrollbar
-      width: $size
-      height: $size
+  &::-webkit-scrollbar
+    width: $size
+    height: $size
 
-   &::-webkit-scrollbar-thumb
-      background: $foreground-color
+  &::-webkit-scrollbar-thumb
+    background: $foreground-color
 
-   &::-webkit-scrollbar-track
-      background: $background-color
-   &
-      scrollbar-face-color: $foreground-color
-      scrollbar-track-color: $background-color
+  &::-webkit-scrollbar-track
+    background: $background-color
+  &
+    scrollbar-face-color: $foreground-color
+    scrollbar-track-color: $background-color
 
 
 @keyframes leftToRight
-   49%
-      transform: translate(100%)
-   50%
-      opacity: 0
-      transform: translate(-100%)
-   51%
-      opacity: 1
+  49%
+    transform: translate(100%)
+  50%
+    opacity: 0
+    transform: translate(-100%)
+  51%
+    opacity: 1
 
 
 @import "beatkey.css"
@@ -62,131 +62,141 @@ $color2: #333333
 $color3: #F76A51
 
 *
-   box-sizing: border-box
+  box-sizing: border-box
 
 html
-   overflow-y: scroll
+  overflow-y: scroll
 
 body, html
-   font-family: 'Poppins', sans-serif
-   color: #fff
-   background-color: #151515
+  font-family: 'Poppins', sans-serif
+  color: #fff
+  background-color: #151515
 
 body
-   max-width: 100%
-   overflow: hidden
-   padding: 0 5em
+  max-width: 100%
+  overflow: hidden
+  padding: 0 5em
 
 main
-   max-width: 100%
-   overflow: hidden
+  max-width: 100%
+  overflow: hidden
 
 /********************************************************/
 
 .Title1
-   font-size: 1.5em
-   font-weight: 600
+  font-size: 1.5em
+  font-weight: 600
 
 header
-   padding: 20px 0
+  padding: 20px 0
 
-   .Logo
-      width: 150px
+  .Logo
+    width: 150px
 
-   nav
-      a
-         margin-right: 20px
+  nav
+    a
+      margin-right: 20px
 
-   i
-      font-size: 20px !important
-      font-weight: bold !important
+  i
+    font-size: 20px !important
+    font-weight: bold !important
 
-   .Avatar
-      width: 40px
-      cursor: pointer
+  .Avatar
+    width: 40px
+    cursor: pointer
 
 .Slider1
-   position: relative
-   max-height: 160px
+  position: relative
+  max-height: 160px
 
-   &:hover
-      z-index: 1
+  &:hover
+    z-index: 1
 
-   .slick-list
-      overflow: unset
+  .slick-list
+    overflow: unset
 
-   .slick-slide
+  .slick-slide
 
-   .Item
-      position: relative
-      min-height: 160px
+  .Item
+    position: relative
+    min-height: 160px
+
+    .ContentContainer
+      position: absolute
+      padding: 5px
+
+      .Content
+        transition: all .2s
+        position: relative
+
+        .Image
+          position: relative
+          z-index: 1
+          width: 100%
+          height: 100%
+
+          img
+            width: 100%
+            height: 100%
+
+          .Video
+            position: absolute
+            width: 100%
+            height: 100%
+            left: 0
+            top: 0
+            opacity: 0
+
+        .Info
+          display: none
+          background-color: #191919
+          padding: 15px 10px
+
+          .Icons
+            display: flex
+            align-items: center
+
+            .Icon
+              background-color: #232323
+              color: #fff
+              font-size: 20px
+              border-radius: 50%
+              width: 50px
+              height: 50px
+              display: flex
+              align-items: center
+              justify-content: center
+              margin-right: 10px
+              border: 1px solid #b0b0b0
+              cursor: pointer
+              transition: all .2s
+
+              &:hover
+                background-color: #fff
+                color: #000
+
+    &:hover
+      z-index: 2
+
+      .Video
+        z-index: 2
+        opacity: 1 !important
 
       .ContentContainer
-         position: absolute
-         padding: 5px
+        width: 150%
+        transform: translate(-50%, -50%)
+        top: 100%
+        left: 50%
 
-         .Content
-            transition: all .2s
-            position: relative
+        .Info
+          display: block
 
-            .Image
-               position: relative
-               z-index: 1
-               width: 100%
-               height: 100%
+.Player
+  height: 100vh
 
-               img
-                  width: 100%
-                  height: 100%
+  .plyr--video
+    height: 100%
 
-               .Video
-                  position: absolute
-                  width: 100%
-                  height: 100%
-                  left: 0
-                  top: 0
-                  opacity: 0
-
-            .Info
-               display: none
-               background-color: #191919
-               padding: 15px 10px
-
-               .Icons
-                  display: flex
-                  align-items: center
-
-                  .Icon
-                     background-color: #232323
-                     color: #fff
-                     font-size: 20px
-                     border-radius: 50%
-                     width: 50px
-                     height: 50px
-                     display: flex
-                     align-items: center
-                     justify-content: center
-                     margin-right: 10px
-                     border: 1px solid #b0b0b0
-                     cursor: pointer
-                     transition: all .2s
-
-                     &:hover
-                        background-color: #fff
-                        color: #000
-
-      &:hover
-         z-index: 2
-
-         .Video
-            z-index: 2
-            opacity: 1 !important
-
-         .ContentContainer
-            width: 150%
-            transform: translate(-50%, -50%)
-            top: 100%
-            left: 50%
-
-            .Info
-               display: block
+  .plyr__video-embed
+    height: 100% !important
+    padding-bottom: 0 !important

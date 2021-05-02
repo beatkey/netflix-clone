@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import Link from "next/link";
 
 const Index = (props) => {
     const settings = {
@@ -29,9 +30,14 @@ const Index = (props) => {
                             </div>
                             <div className="Info">
                                 <div className="Icons mb-2">
-                                    <a href="/form" className="Icon">
+                                    <Link href={{
+                                        pathname: '/player',
+                                        query: {
+                                            data: "test"
+                                        }
+                                    }} className="Icon">
                                         <i className="fa fa-play"></i>
-                                    </a>
+                                    </Link>
                                     <div className="Icon">
                                         <i className="fa fa-check"></i>
                                     </div>

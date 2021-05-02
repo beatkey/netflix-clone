@@ -115,4 +115,12 @@ header {
         .Slider1 .Item:hover .ContentContainer .Info {
           display: block; }
 
+.Player {
+  height: 100vh; }
+  .Player .plyr--video {
+    height: 100%; }
+  .Player .plyr__video-embed {
+    height: 100% !important;
+    padding-bottom: 0 !important; }
+
 /*# sourceMappingURL=style.css.map */
