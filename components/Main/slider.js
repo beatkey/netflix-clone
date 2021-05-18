@@ -31,12 +31,11 @@ const Index = (props) => {
                             <div className="Info">
                                 <div className="Icons mb-2">
                                     <Link href={{
-                                        pathname: '/player',
-                                        query: {
-                                            data: "test"
-                                        }
+                                        pathname: '/player'
                                     }} className="Icon">
-                                        <i className="fa fa-play"></i>
+                                        <div className="Icon">
+                                            <i className="fa fa-play"></i>
+                                        </div>
                                     </Link>
                                     <div className="Icon">
                                         <i className="fa fa-check"></i>

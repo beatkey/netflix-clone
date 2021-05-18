@@ -1,13 +1,8 @@
 import React, {useState, useEffect} from "react";
 
-import fetch from "isomorphic-unfetch";
 import Slider from './slider'
 
 const Main = (props) => {
-    const [sliderDataPopular, setSliderDataPopular] = useState(null);
-    const [sliderDataTopRated, setSliderDataTopRated] = useState(null);
-    const [sliderDataNowPlaying, setsliderDataNowPlaying] = useState(null);
-
     useEffect(() => {
         console.log(props.sliderData)
     }, [])
